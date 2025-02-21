@@ -1,20 +1,48 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import NlpPage from "@/pages/NlpPage.vue";
+import WordPage from "@/pages/WordPage.vue";
+import ImgPage from "@/pages/ImgPage.vue";
+import HomePage from "@/pages/HomePage.vue";
+import HistoryPage from "@/pages/HistoryPage.vue";
+import UserLoginPage from "@/pages/UserLoginPage.vue";
+import UserRegisterPage from "@/pages/UserRegisterPage.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
-    component: HomeView,
+    component: NlpPage,
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    path: "/user/login",
+    name: "login",
+    component: UserLoginPage,
+  },
+  {
+    path: "/user/register",
+    name: "register",
+    component: UserRegisterPage,
+  },
+  {
+    path: "/nlp",
+    name: "nlp",
+    component: NlpPage,
+  },
+  {
+    path: "/word",
+    name: "word",
+    component: WordPage,
+  },
+  {
+    path: "/img",
+    name: "img",
+    component: ImgPage,
+  },
+  {
+    path: "/list",
+    name: "list",
+    component: HistoryPage,
   },
 ];
 
