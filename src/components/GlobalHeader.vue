@@ -3,7 +3,7 @@
     <a-row :wrap="false">
       <a-col flex="200px">
         <div class="title-bar">
-          <img class="logo" src="../assets/images/logo2.png" alt="logo" />
+          <img class="logo" src="../assets/images/logo1.png" alt="logo" />
           <div class="title">智能识别系统</div>
         </div>
       </a-col>
